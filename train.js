@@ -1,7 +1,7 @@
 const fs = require('fs-extra')
 const mnist = require('mnist')
 const crossValidate = require('./cross-validate')
-const trainingSet = mnist.set(300, 0).training
+const trainingSet = mnist.set(300, 0).training //300 imagens para treinamento
 
 //5-fold
 crossValidate.train(trainingSet, {
